@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <div className="flex min-h-dvh flex-col">
-      <SiteHeader />
       <main className="flex-1">
         {/* Hero */}
         <section className="mx-auto max-w-7xl px-4 py-24 text-center sm:px-6 lg:px-8">
@@ -98,7 +97,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }

@@ -18,7 +18,6 @@ const experience = [
 export default function AboutPage() {
   return (
     <div className="flex min-h-dvh flex-col">
-      <SiteHeader />
       <main className="flex-1">
         <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -111,7 +110,6 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }
