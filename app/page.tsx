@@ -51,12 +51,12 @@ export default function Home() {
               { title: "E-commerce app", icon: Sparkles, desc: "Fast checkout, smart recommendations, and a happy customer." },
             ].map((p, i) => (
               <Link key={i} href="/works" className="group block rounded-2xl border p-6 transition hover:bg-accent">
-                <p className="flex items-center gap-2 text-sm font-medium text-muted-foreground">
-                  <p className="rounded-md bg-muted p-1.5 text-muted-foreground"><p className="block size-4" /><p className="block size-4" /></p>
-                  {p.icon.size}
+                <span className="inline-flex size-10 items-center justify-center rounded-xl bg-muted text-muted-foreground">
+                  <p.icon className="size-5" />
+                </span>
+                <h3 className="mt-4 text-lg font-semibold tracking-tight group-hover:text-violet-600 dark:group-hover:text-violet-400">
                   {p.title}
-                </p>
-                <h3 className="mt-3 text-lg font-semibold tracking-tight group-hover:text-violet-600 dark:group-hover:text-violet-400">{p.title}</h3>
+                </h3>
                 <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
               </Link>
             ))}

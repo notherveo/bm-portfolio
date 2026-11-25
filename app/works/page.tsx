@@ -89,8 +89,9 @@ export default function WorksPage() {
             {projects.map((p, i) => (
               <Card key={i} className="flex flex-col overflow-hidden">
                 <div className="flex items-center gap-2 border-b px-5 py-4">
-                  <p className="flex size-9 items-center justify-center rounded-lg bg-muted text-muted-foreground"><p className="block size-4" /><p className="block size-4" /></p>
-                  {p.icon.size}
+                  <span className="flex size-9 items-center justify-center rounded-lg bg-muted text-muted-foreground">
+                    <p.icon className="size-4" />
+                  </span>
                   <span className="text-sm text-muted-foreground">{p.category}</span>
                 </div>
                 <div className="flex-1 p-5">
